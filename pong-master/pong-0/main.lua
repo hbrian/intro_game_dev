@@ -26,6 +26,7 @@ WINDOW_HEIGHT = 720
 --[[
     Runs when the game first starts up, only once; used to initialize the game.
 ]]
+-- love.load (from love2d) init game state 
 function love.load()
     love.window.setMode(WINDOW_WIDTH, WINDOW_HEIGHT, {
         fullscreen = false,

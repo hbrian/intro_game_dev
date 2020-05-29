@@ -89,6 +89,7 @@ function love.draw()
     love.graphics.rectangle('fill', 10, 30, 5, 20)
 
     -- render second paddle (right side)
+    -- after "fill" is location of graphic
     love.graphics.rectangle('fill', VIRTUAL_WIDTH - 10, VIRTUAL_HEIGHT - 50, 5, 20)
 
     -- render ball (center)

@@ -1,4 +1,4 @@
- -- push.lua v0.2
+-- push.lua v0.2
 
 -- Copyright (c) 2017 Ulysse Ramage
 -- Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -218,7 +218,7 @@ function push:switchFullscreen(winw, winh)
 end
 
 function push:resize(w, h)
-  local pixelScale = love.window.getPixelScale()
+  local pixelScale = love.window.getDPIScale()
   if self._highdpi then w, h = w / pixelScale, h / pixelScale end
   self._RWIDTH = w
   self._RHEIGHT = h
